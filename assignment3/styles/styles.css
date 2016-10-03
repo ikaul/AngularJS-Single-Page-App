@@ -9,6 +9,15 @@ input[type="text"] {
   float: left;
   margin-left: 10px;
 }
+.emptyMessage {
+  clear: both;
+  margin-left: 10px;
+}
+.tableView {
+  clear: left;
+  margin-left: 10px;
+  display: block;
+}
 .loader {
   display: none;
   margin-left: 5px;
