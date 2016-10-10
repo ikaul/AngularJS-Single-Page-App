@@ -1,2 +1,0 @@
-<span>Main Menu</span>
-<a ui-sref="categories" ui-sref-active="activeTab">Menu Categories</a>
