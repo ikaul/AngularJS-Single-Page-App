@@ -1,0 +1,16 @@
+<table class="table table-striped table-hover dataTable responsive display" width="100%">
+<thead>
+<th>Short Name</th>
+<th>Name</th>
+<th>Description</th>
+<th>Price</th>
+</thead>
+<tbody>
+<tr ng-repeat= "item in itemCtrl.items">
+<td>{{item.short_name}}</td>
+<td>{{item.name}}</td>
+<td>{{item.description}}</td>
+<td>{{item.price_large}}</td>
+</tr>
+</tbody>
+</table>
