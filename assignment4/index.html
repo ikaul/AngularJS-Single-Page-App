@@ -1,33 +1,38 @@
 <!doctype html>
 <html lang="en" ng-app="MenuApp">
 <head>
-  <title>Narrow Down Your Menu Choice</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="css/bootstrap.min.css">
-  <link rel="stylesheet" href="css/styles.css">
+  <title>Chinese Restaurant</title>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
 
-  <!-- Libraries -->
-  <script src="js/angular.min.js"></script>
-  <script src="js/angular-ui-router.min.js"></script>
+    <!-- Libraries -->
+    <script src="js/angular.min.js"></script>
+    <script src="js/angular-ui-router.min.js"></script>
 
-  <!-- Modules -->
-  <script src="js/data.module.js"></script>
-  <script src="js/menuapp.module.js"></script>
+    <!-- Modules -->
+    <script src="src/menu/menuapp.module.js"></script>
+    <script src="src/menu/data.module.js"></script>
+    <script src="src/spinner/spinner.module.js"></script>
 
-  <!-- Routes -->
-  <script src="js/routes.js"></script>
+    <!-- Routes -->
+    <script src="src/routes.js"></script>
 
-  <!-- 'MenuApp' module artifacts -->
-  <script src="js/categories.component.js"></script>
-  <script src="js/categories.controller.js"></script>
-  <script src="js/items.component.js"></script>
-  <script src="js/items.controller.js"></script>
-  <script src="js/menudata.service.js"></script>
+    <!-- MenuApp module artifacts -->
+    <script src="src/menu/categories.component.js"></script>
+    <script src="src/menu/categories.controller.js"></script>
+    <script src="src/menu/items.component.js"></script>
+    <script src="src/menu/items.controller.js"></script>
 
-</head>
-<body>
-  <h1> Welcome to Chinese Restaurant </h1>
-  <hr/>
-  <ui-view></ui-view>
-</body>
-</html>
+    <!-- Data module artifacts -->
+    <script src="src/menu/menudata.service.js"></script>
+
+    <!-- 'Spinner' module artifacts -->
+    <script src="src/spinner/loadingspinner.component.js"></script>
+
+  </head>
+  <body>
+    <ui-view></ui-view>
+  </body>
+  </html>

@@ -1,8 +1,0 @@
-<div class="col-md-3 col-sm-4 col-xs-6 col-xxs-12" ng-repeat="item in catCtrl.items">
-  <a ui-sref="items({categoryShortName: item.short_name})">
-		{{item.name}}
-    <div class="category-tile">
-      <img width="200" height="200" src="images/menu/{{item.short_name}}/{{item.short_name}}.jpg" alt="{{item.name}}">
-    </div>
-	</a>
-</div>
