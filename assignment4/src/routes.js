@@ -15,12 +15,12 @@
     // Home page
     .state('home', {
       url: '/',
-      templateUrl: 'templates/home.thtml'
+      templateUrl: 'src/menu/home.template.html'
     })
     // Premade list pages
     .state('categories', {
       url: '/categories',
-      templateUrl: 'templates/categories.thtml',
+      templateUrl: 'src/category/categories.template.html',
       controller: 'CategoriesController as catCtrl',
       resolve: {
         categoryList: ['MenuDataService', function (MenuDataService) {
@@ -30,7 +30,7 @@
     })
     .state('items', {
       url: '/categories/items/{categoryShortName}',
-      templateUrl: 'templates/items.thtml',
+      templateUrl: 'src/item/items.template.html',
       controller: 'ItemsController as itemCtrl',
       resolve: {
         itemList: ['$stateParams', 'MenuDataService', function ($stateParams, MenuDataService) {
