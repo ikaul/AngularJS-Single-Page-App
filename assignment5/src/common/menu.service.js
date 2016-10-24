@@ -8,6 +8,7 @@ angular.module('common')
 MenuService.$inject = ['$http', 'ApiPath'];
 function MenuService($http, ApiPath) {
   var service = this;
+  service.user = {};
 
   service.getCategories = function () {
     return $http.get(ApiPath + '/categories.json').then(function (response) {
@@ -27,8 +28,13 @@ function MenuService($http, ApiPath) {
     });
   };
 
+  service.setUserProfile = function (user) {
+    service.user = user;
+  };
+
+  service.getUserProfile = function () {
+    return service.user;
+  }
+
 }
-
-
-
 })();
