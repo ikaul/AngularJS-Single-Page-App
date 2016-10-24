@@ -34,7 +34,11 @@ function MenuService($http, ApiPath) {
 
   service.getUserProfile = function () {
     return service.user;
-  }
+  };
 
+  service.getFavoriteDish = function (shortName) {
+    return $http.get(ApiPath +'/menu_items/'+ shortName +'.json');
+  };
+  
 }
 })();

@@ -64,11 +64,21 @@
         <br>
       </div>
 
+      <div class="form-group">
+        <div class="alert alert-danger" role="alert" ng-if="$signUpCtrl.error">
+          Hmm, try something else, like A1 or C1 or L1
+        </div>
+        <div class="alert alert-success" role="alert" ng-if="$signUpCtrl.success">
+          Your information has been saved.
+        </div>
+        <br>
+      </div>
+
       <button class="btn btn-primary"
       ng-disabled="signUpForm.$invalid"
       ng-click="$signUpCtrl.submit()">
-        Submit
-      </button>
-    </form>
-  </fieldset>
+      Submit
+    </button>
+  </form>
+</fieldset>
 </div>
